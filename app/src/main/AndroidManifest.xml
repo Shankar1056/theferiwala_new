@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="apextechies.theferiwala">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+    <uses-permission android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <permission
+        android:name="apextechies.theferiwala.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activity.MyAddress"
+            android:label="My Address"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activity.ProductDetails"
+            android:label="Product Details"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activity.MyCartActivity"
+            android:label="My Cart"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activity.MapActivity"
+            android:label="Product Details"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".payment.PaymentActivity"
+            android:label="Product Details"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activity.EmailLogin"
+            android:label="Product Details"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB0TDQXg7y_H_sBJme0JB5cXMz6efHTJW8"/>
+
+        <service android:enabled="true"
+            android:name=".allinterfaces.AddressResolverService" />
+
+
+    </application>
+
+</manifest>

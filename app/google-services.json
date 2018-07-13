@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "438259096758",
+    "firebase_url": "https://theferiwala-a6037.firebaseio.com",
+    "project_id": "theferiwala-a6037",
+    "storage_bucket": "theferiwala-a6037.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438259096758:android:c56ade221d710229",
+        "android_client_info": {
+          "package_name": "apextechies.theferiwala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438259096758-smg4epgdo30idq7hj176d6j7t5kuoip7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpQez4MPmo2_b9skovL8Q7P3xTlvGcu00"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
